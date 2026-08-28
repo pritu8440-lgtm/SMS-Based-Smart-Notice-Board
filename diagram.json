@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "author": "Ritu Priya",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 40,
+      "left": 300,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-ds1307",
+      "id": "rtc1",
+      "top": 300,
+      "left": 100,
+      "attrs": {
+        "initTime": "now"
+      }
+    },
+    {
+      "type": "wokwi-max7219-matrix",
+      "id": "matrix1",
+      "top": 40,
+      "left": 700,
+      "attrs": {
+        "chain": "4",
+        "layout": "fc16",
+        "color": "red"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "rtc1:5V",
+      "uno:5V",
+      "red",
+      []
+    ],
+    [
+      "rtc1:GND",
+      "uno:GND.2",
+      "black",
+      []
+    ],
+    [
+      "rtc1:SDA",
+      "uno:A4",
+      "green",
+      []
+    ],
+    [
+      "rtc1:SCL",
+      "uno:A5",
+      "blue",
+      []
+    ],
+    [
+      "matrix1:VCC",
+      "uno:5V",
+      "red",
+      []
+    ],
+    [
+      "matrix1:GND",
+      "uno:GND.2",
+      "black",
+      []
+    ],
+    [
+      "matrix1:DIN",
+      "uno:11",
+      "green",
+      []
+    ],
+    [
+      "matrix1:CS",
+      "uno:10",
+      "yellow",
+      []
+    ],
+    [
+      "matrix1:CLK",
+      "uno:13",
+      "blue",
+      []
+    ]
+  ]
+}

@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = "build/SMS_Smart_Notice_Board.ino.hex"
+elf = "build/SMS_Smart_Notice_Board.ino.elf"
+rfc2217ServerPort = 4000
