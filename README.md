@@ -99,3 +99,16 @@ The system works in the following sequence:
        |               |
        v               v
    Time/Greeting    SMS Notice
+
+   ## Wokwi Simulation
+
+▶️ [Run the SMS-Based Smart Notice Board on Wokwi](https://wokwi.com/projects/473572606485640193)
+
+The simulation includes:
+- Arduino Uno
+- DS1307 RTC
+- MAX7219 LED Matrix
+- SMS/notice display logic
+- Real-time clock and greeting display
+
+You can start the simulation and test the notice board directly in your browser.
