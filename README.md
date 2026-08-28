@@ -83,6 +83,7 @@ The system works in the following sequence:
 8. After displaying the message, the normal time/greeting display resumes.
 
 ### System Flow
+**### System Flow**
 
 ```text
              SMS
@@ -99,12 +100,14 @@ The system works in the following sequence:
        |               |
        v               v
    Time/Greeting    SMS Notice
+```
 
-   ## Wokwi Simulation
+**## Wokwi Simulation**
 
 ▶️ [Run the SMS-Based Smart Notice Board on Wokwi](https://wokwi.com/projects/473572606485640193)
 
 The simulation includes:
+
 - Arduino Uno
 - DS1307 RTC
 - MAX7219 LED Matrix
